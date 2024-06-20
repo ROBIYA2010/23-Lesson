@@ -1,0 +1,37 @@
+.card{
+    width: 200px;
+   height: 200px;
+   display: grid;
+   background-color: red;
+   place-content: center;
+   animation-name: cardAnimate;
+   animation-duration: 10s;
+}
+.wrapper{
+    width: 600px;
+    height: 600px;
+    border: 1px solid;
+    margin: 0 auto;
+}
+@keyframes  cardAnimate {
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: green;
+        transform:translateX(400px) ;
+    }
+    50%{
+        background-color: blue;
+        transform: translate(400px,400px);
+    }
+    75%{
+background-color: aqua;
+transform: translate(0,400px);
+    }
+    100%{
+        background-color: red;
+        transform: translate(0,0);
+    }
+    
+}
